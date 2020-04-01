@@ -5,6 +5,7 @@ import Author from '../components/Author/author.js';
 import Comment from '../components/Comments/comment.js';
 import Approved from '../components/Approved/approved';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Wrapper from '../wrappers/wrapper';
 
 class App extends Component {
   constructor(props){
@@ -56,7 +57,8 @@ class App extends Component {
     //   color: 'black'
     // }
     return (
-      <div className="App">
+      // <div className="App">
+      <Wrapper>
       <h1>نویسندگان</h1>
         <button className="btn btn-primary btn-large" onClick={this.changeAuthorName.bind(this , "مسعود صالحی")}>تغییراسامی نویسندگان</button>
         <p>تعداد نویسندگان : {this.state.authors.length}</p>
@@ -84,7 +86,8 @@ class App extends Component {
               <Comment fullName={this.state.authors[3].fullName} description="bad" regDate={this.state.authors[3].regdate}/>
             </Approved>
         </div>
-      </div>
+        </Wrapper>
+      // </div>
     );
   }
 }
