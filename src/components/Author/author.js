@@ -1,15 +1,20 @@
 import React from 'react';
-import './author.css'
+import './author.css';
+import Wrapper from '../../wrappers/wrapper';
+// import WithClass from '../../wrappers/withClass';
+
 const Author = (props) => {
     return (
-    <div className="authors pull-right">
+    // <div className="authors pull-right">
+    <Wrapper classes="authors pull-right">
         <h2>{props.fullName}</h2>
         <p>{props.children}</p>
         <button className="btn btn-success align" onClick={props.click}>تغییر اسامی</button>
         <div className="margin-top">
             <input type="text" onChange={props.changed} value={props.name}/>
         </div>
-    </div>
+    </Wrapper>
+    // </div>
     )
 };
 

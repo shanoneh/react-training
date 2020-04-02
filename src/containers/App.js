@@ -6,6 +6,7 @@ import Comment from '../components/Comments/comment.js';
 import Approved from '../components/Approved/approved';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Wrapper from '../wrappers/wrapper';
+// import withClass from '../wrappers/withClass';
 
 class App extends Component {
   constructor(props){
