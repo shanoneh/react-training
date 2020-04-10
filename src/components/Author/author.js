@@ -2,6 +2,7 @@ import React from 'react';
 import './author.css';
 import Wrapper from '../../wrappers/wrapper';
 // import WithClass from '../../wrappers/withClass';
+import propTypes from 'prop-types';
 
 const Author = (props) => {
     return (
@@ -17,6 +18,12 @@ const Author = (props) => {
     // </div>
     )
 };
+
+Author.propTypes = {
+    fullName: propTypes.string,
+    click: propTypes.func,
+    changed: propTypes.func,
+}
 
 export default Author;
 

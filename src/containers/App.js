@@ -20,6 +20,7 @@ class App extends Component {
     ],
     showAuthors: false,
     showComments: true, 
+    toggleCounter: 0,
     }
   }
 
@@ -51,6 +52,13 @@ class App extends Component {
         ]
     })
     }
+    // countAuthors = () =>{
+    //   const status = this.state.showAuthors;
+    //   this.setState({
+    //     showAuthors =!status,
+    //     toggleCounter : this.state.toggleCounter '+' 1
+    //   })
+    // }
   render () {
     // const style={
     //   backgroundColor:'yellow',
